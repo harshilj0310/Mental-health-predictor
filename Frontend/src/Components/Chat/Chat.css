@@ -1,0 +1,78 @@
+.quesPage {
+  height: 100vh;
+  background-image: linear-gradient(white, var(--main-color));
+  display: flex;
+  flex-direction: column;
+}
+
+.quesForm {
+  margin: auto;
+  min-height: 400px;
+  width: 700px;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.quesForm .question {
+  font-size: 1.2em;
+  /* color: var(--main-color); */
+}
+
+.quesForm .answer {
+  background-color: transparent;
+  width: 100%;
+  min-height: 200px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+.quesForm .answer:focus {
+  outline: none;
+}
+
+.ques {
+  /* border: 2px solid red */
+  width: 100%;
+}
+
+.ques .sentiment-bar {
+  display: flex;
+}
+.ques .neg {
+  border: 6px solid red;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.ques .neu {
+  border: 6px solid blue;
+}
+.ques .pos {
+  border: 6px solid green;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .quesForm {
+    width: 95%;
+    height: 500px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 0px 30px;
+  }
+  .quesForm .answer {
+    font-size: 1.1em;
+    width: 100%;
+  }
+  .quesForm .question {
+    font-size: 1.2em;
+  }
+}
